@@ -1,11 +1,51 @@
-.postsList{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.mainContent{
+    padding-bottom: 3rem;
 }
 
-.post{
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col3{
+    width: 45%;
+    padding-bottom: 1rem;
+}
+
+.tagList{
+    margin: 1rem auto;
     width: 50%;
     text-align: center;
-    margin-bottom: 3rem;
+    border: 0.1rem solid grey;
+    background-color: bisque;
+}
+
+.form{
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+    .formDiv{
+        width: 100%;
+        margin: 0.3rem 0;
+    }
+    .formCheckbox{
+        margin-right: 0.5rem;
+    }
+    .formField{
+        border: none;
+        border-radius: 15px;
+        padding: 0.3rem;
+        width: 30%;
+    }
+    .submit{
+        border: none;
+        background-color: blue;
+        color: white;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
 }
