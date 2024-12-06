@@ -16,3 +16,8 @@ a{
   width: 80%;
   margin: 0 auto;
 }
+
+.active{
+  font-weight: bold;
+  color: yellow !important;
+}
