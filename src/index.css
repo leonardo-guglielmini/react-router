@@ -21,3 +21,32 @@ a{
   font-weight: bold;
   color: yellow !important;
 }
+
+body{
+  background-color: #e5e5e5;
+}
+
+.tag{
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+  border: 0.1rem solid black;
+  background-color: indianred;
+}
+
+.htmlTag{
+  background-color: salmon;
+}
+
+.jsTag{
+  background-color: aquamarine;
+}
+
+.cssTag{
+  background-color: burlywood;
+}
+
+.phpTag{
+  background-color: thistle;
+}

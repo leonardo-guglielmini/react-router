@@ -4,7 +4,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import { faPen } from '@fortawesome/free-solid-svg-icons'
 
 import placeholderImg from "../../assets/placeholder.webp"
-import style from "./card.module.css"
+import style from "./Card.module.css"
 import { API_BASE_URI } from '../../pages/Posts/Posts'
 
 import { useState } from 'react'
