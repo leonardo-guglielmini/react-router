@@ -1,8 +1,10 @@
+import commonStyle from '../Common.module.css'
+
 export default function Posts(){
     return(
         <main>
-            <section>
-                <h1>POSTS</h1>
+            <section className="container">
+                <h1 className={commonStyle.title}>POSTS</h1>
             </section>
         </main>
     )

@@ -1,0 +1,16 @@
+header{
+    padding: 2rem 0;
+    background-color: darkcyan;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    li{
+        padding: 0 1rem;
+    }
+}
+
+.navlink{
+    color: white;
+}

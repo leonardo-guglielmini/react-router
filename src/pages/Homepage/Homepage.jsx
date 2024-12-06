@@ -1,9 +1,10 @@
+import commonStyle from '../Common.module.css'
 
 export default function Homepage(){
     return(
         <main>
-            <section>
-                <h1>HOMEPAGE</h1>
+            <section className="container">
+                <h1 className={commonStyle.title}>HOMEPAGE</h1>
             </section>
         </main>
     )
