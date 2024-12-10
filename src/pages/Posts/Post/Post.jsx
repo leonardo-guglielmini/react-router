@@ -35,7 +35,7 @@ export default function Post(){
             {
                 post ? 
                 <div className={style.content}>
-                    <div><Link to={`/posts/${parseInt(id)-1}`}><FontAwesomeIcon icon={faArrowLeft} className={style.faArrowLeft}/></Link></div>
+                    <div> {id > 1 ? <Link to={`/posts/${parseInt(id)-1}`}><FontAwesomeIcon icon={faArrowLeft} className={style.faArrowLeft}/></Link> : <Link to={`/posts`}><FontAwesomeIcon icon={faArrowLeft} className={style.faArrowLeft}/></Link>}</div>
                     <div className={style.card}>
                         <div className={style.cardImg}>
                             <img src={post.image ? `${API_BASE_URI}/imgs/posts/` + post.image : placeholderImg}></img>
@@ -45,7 +45,7 @@ export default function Post(){
                             <p>{post.content}</p>
                         </div>
                     </div>
-                    <div><Link to={`/posts/${parseInt(id)+1}`}><FontAwesomeIcon icon={faArrowRight} className={style.faArrowRight}/></Link></div> 
+                    <div> {id < 5 ? <Link to={`/posts/${parseInt(id)+1}`}><FontAwesomeIcon icon={faArrowRight} className={style.faArrowRight}/></Link> : <Link to={`/posts`}><FontAwesomeIcon icon={faArrowRight} className={style.faArrowRight}/></Link>}</div>
                 </div>:
                 <div className={style.loading}>
                     <img src={loadingImg}></img>

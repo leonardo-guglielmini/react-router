@@ -8,6 +8,7 @@ import style from "./Card.module.css"
 import { API_BASE_URI } from '../../pages/Posts/Posts'
 
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 export default function Card({ deletePost=()=>{}, changePostTitle=()=>{}, setPostTitle=()=>{}, title ="", image, content="",tags="", postTitle="", id}){
@@ -36,7 +37,7 @@ export default function Card({ deletePost=()=>{}, changePostTitle=()=>{}, setPos
                     <p>{content}</p>
                     {tags.map((tag,index) => <p className={`tag ${tag}Tag`} key={index}>{tag}</p>)}
                     <div className={style.btnSection}>
-                        <button><a href="#">Leggi di più</a></button>
+                        <button><Link to={`/posts/${id}`}>Leggi di più</Link></button>
                         <button onClick={()=>deletePost()}><FontAwesomeIcon icon={faTrash} className={style.faTrash}/></button>
                     </div> 
                 </div>
