@@ -1,0 +1,26 @@
+.mainContent{
+    margin: 3rem 0;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+.cardImg, .cardBody{
+    width: 75%;
+    text-align: center;
+    img{
+        width: 100%;
+        display: block;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        margin-bottom: 1rem;
+    }
+}
+
+.loading{
+    text-align: center;
+}
