@@ -2,6 +2,10 @@
     margin: 3rem 0;
 }
 
+.content{
+    display: flex;
+    align-items: center;
+}
 .card{
     display: flex;
     justify-content: center;
