@@ -13,6 +13,7 @@ import Homepage from './pages/Homepage/Homepage'
 import About from './pages/About/About'
 import Posts from './pages/Posts/Posts'
 import NotFound from './pages/NotFound/NotFound'
+import Post from "./pages/Posts/Post/Post"
 
 
 
@@ -24,7 +25,10 @@ function App() {
       <Routes >
         <Route element={<Default/>}>
           <Route path='/' element={<Homepage/>}></Route>
-          <Route path='/posts' element={<Posts/>}></Route>
+          <Route path='/posts'>
+            <Route index Component={Posts}></Route>
+            <Route path=":id" Component={Post}></Route>
+          </Route>
           <Route path='/about-us' element={<About/>}></Route>
         </Route>
         <Route element={<Blank/>}>
